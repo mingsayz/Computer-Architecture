@@ -171,21 +171,28 @@
     - 일반적으로 언급되는 프로그래밍 언어
     - C언어 , Python, Java 등
     - 고급언어를 컴파일러가 어셈블리어로 번역
-      > printf("hello world!")  : 고급언어(C)
-      > mov eax,1
-      > push eax
-      > push DWARD "Hello world!"
-      > call printf
+      ```
+      printf("hello world!")  //고급언어(C)
+      ```
+
+      ```
+      mov eax,1
+      push eax
+      push DWARD "Hello world!"
+      call printf
+      ```
 
   * 2. 어셈블리어
     - 컴파일러로 부터 생성된 어셈블리어는 기계가 이해할 수 있는 형태로 번역됨
     - 기계사고방식의 언어
     - 어셈블러는 어셈블리어를 기계어로 번역
-      > mov eax,1
-      > push eax
-      > push DWARD "Hello world!"
-      > call printf  
-      > -> 1101001001000 ...
+    ```
+      mov eax,1
+      push eax
+      push DWARD "Hello world!"
+      call printf  
+      -> 1101001001000 ...
+    ```
 
   * 3. 기계어
     - 기계어는 기수가 2인 숫자로 구성됨
